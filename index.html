@@ -230,6 +230,7 @@
     .mobile-menu {
 	  display: none;
 	  pointer-events: none;
+	  opacity: 0;
 	  flex-direction: column;
 	  gap: 12px;
 	  background: #fff;
@@ -246,6 +247,7 @@
 	.mobile-menu.show {
 	  display: flex;
 	  pointer-events: auto;
+	  opacity: 1;
 	}
 
 	.mobile-toggle {
@@ -872,7 +874,7 @@
 			  menu.classList.toggle('show');
 			}
 			</script>
-
+		</div>
 
       <div class="mobile-menu" id="mobileMenu">
 		  <a href="#about" onclick="toggleMenu()">About</a>
@@ -1185,7 +1187,7 @@
                 <div class="gallery-tag">United in colours</div>
               </div>
 			  <div class="gallery-item">
-			   <video src="videos/s1.mp4" autoplay loop muted playsinline></video>
+			   <video src="videos/s1.mp4" autoplay loop muted playsinline preload="auto"></video>
 			   <div class="gallery-tag">Celebration</div>
 			  </div>
 
